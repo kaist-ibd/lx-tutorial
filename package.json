@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter-landing-page",
+  "name": "lx-web-demo",
   "private": true,
   "engines": {
     "node": ">=18.0.0"
@@ -9,7 +9,7 @@
     "gatsby-theme-landing-page"
   ],
   "version": "1.0.0",
-  "description": "Gatsby landing page starter built with Contentful",
+  "description": "lx web demo",
   "scripts": {
     "start": "gatsby develop",
     "start:refresh": "ENABLE_GATSBY_REFRESH_ENDPOINT=true yarn start",
@@ -24,13 +24,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-landing-page.git"
+    "url": "git+https://github.com/kaist-ibd/LX-Demo.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby-starter-landing-page/issues"
+    "url": "https://github.com/kaist-ibd/LX-Demo/issues"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-landing-page#readme",
+  "homepage": "https://github.com/kaist-ibd/LX-Demo",
   "dependencies": {
     "@fontsource/inter": "^4.5.1",
     "dotenv": "^16.0.3",
