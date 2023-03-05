@@ -92,7 +92,6 @@ There are 6 built-in section components available:
 - **CallToAction**: Centered text with CTA links
 - **Features**: large section with image and text side-by-side, often used to list features of a product offering
 - **Benefits**: Tiled cards, often used to list the benefits of a given offering.
-- **Testimonial** Centered text with separate sections for quote and author, often used for social proof.
 
 Content authors can choose any one of these components to render a content _Section_ when creating and editing landing pages.
 
@@ -362,7 +361,6 @@ export {
   Copy,
   CallToAction,
   Benefits,
-  Testimonials,
   NewsletterForm, // example new section component
 } from "../../components/custom-landing-page-components";
 ```

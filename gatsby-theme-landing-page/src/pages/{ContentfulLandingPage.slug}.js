@@ -42,11 +42,6 @@ export const query = graphql`
               html
             }
           }
-          secondaryText {
-            childMarkdownRemark {
-              html
-            }
-          }
           image {
             gatsbyImageData(layout: CONSTRAINED)
             title
@@ -65,3 +60,11 @@ export const query = graphql`
     }
   }
 `;
+
+/*
+          secondaryText {
+            childMarkdownRemark {
+              html
+            }
+          }
+*/

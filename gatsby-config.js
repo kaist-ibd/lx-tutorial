@@ -24,9 +24,9 @@ if (!spaceId || !accessToken) {
 // starter config
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter Landing Page",
+    title: "LX Web Demo",
     description:
-      "Create custom landing pages using Gatsby and Contentful with this Gatsby Starter",
+      "LX Web Demo",
   },
   plugins: [
     {
@@ -36,14 +36,22 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Landing Page`,
-        short_name: `Gatsby Starter Landing Page`,
+        name: `LX Web Demo`,
+        short_name: `LX Web Demo`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#000`,
         display: `browser`,
-        icon: `src/assets/gatsby-monogram.png`,
+        icon: `src/assets/ibd_sqaure_logo_black_100.png`,
       },
+    },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`, // Needed for dynamic images
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {},
     },
   ],
 };

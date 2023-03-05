@@ -3,7 +3,6 @@
   "version": "1.0.2",
   "description": "A Contentful-backed dynamic landing page theme for Gatsby",
   "main": "index.js",
-  "scripts": {},
   "keywords": [
     "gatsby",
     "gatsby-plugin",
