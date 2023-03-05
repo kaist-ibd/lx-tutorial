@@ -5,3 +5,6 @@ node_modules
 .env.development
 .env.production
 .contentful/export-model-and-content.json
+.pnp.cjs
+.pnp.loader.mjs
+.yarn
