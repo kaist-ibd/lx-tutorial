@@ -9,7 +9,7 @@ export default function Button({ href, text, children, variant = "primary" }) {
 
   if (isAbsoluteURL(href)) {
     return (
-      <a className={buttonStyle} href={href}>
+      <a className={buttonStyle} href={href} target={"_blank"}>
         {text || children}
       </a>
     );
