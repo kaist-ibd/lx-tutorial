@@ -14,8 +14,8 @@ export default function Layout(props) {
       </header>
       <main className={styles.main}>{props.children}</main>
       <footer className={styles.footer}>
-        <a href="https://www.ibdsite.com/" target={"_blank"}>IBD</a>
-        <a href="https://www.lx.or.kr/kor.do" target={"_blank"}>LX</a>
+        <a href="https://www.ibdsite.com/" target={"_blank"} rel="noopener noreferrer">IBD</a>
+        <a href="https://www.lx.or.kr/kor.do" target={"_blank"} rel="noopener noreferrer">LX</a>
       </footer>
     </div>
   );
