@@ -1,10 +1,7 @@
 import * as React from "react";
-import * as styles from "./launcher.module.css";
+import * as styles from "./text.module.css";
 // import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import Section from "../components/section";
-import Button from "../components/button";
-import MarkdownText from "../components/markdown-text";
-import Heading from "../components/heading";
+import { Section, MarkdownText, Button, Heading } from "gatsby-theme-landing-page";
 
 export default function Text({ heading, secondaryHeading, content }) {
   const launcherContent = content?.[0];
