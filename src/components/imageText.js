@@ -26,7 +26,7 @@ export default function ImageText({ heading, secondaryHeading, content }) {
 function TextImageContent({ primaryText, image, links }) {
   return (
     <div>
-      <div className={styles.root}>
+      <div className={styles.component}>
         <div className={styles.image}>
           {image && (
             <GatsbyImage
@@ -36,7 +36,7 @@ function TextImageContent({ primaryText, image, links }) {
             />
           )}
         </div>
-        <div className={styles.content}>
+        <div className={styles.componentContent}>
           <MarkdownText {...primaryText} />
         </div>
       </div>

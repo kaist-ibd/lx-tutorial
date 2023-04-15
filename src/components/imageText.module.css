@@ -29,12 +29,12 @@
 }
 
 @media screen and (min-width: 640px) {
-  .root {
+  .component {
     flex-direction: row;
     align-items: center;
   }
 
-  .content {
+  .componentContent {
     width: 35%;
     align-items: flex-start;
   }
