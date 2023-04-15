@@ -33,6 +33,7 @@ function TextImageContent({ primaryText, image, links }) {
               image={getImage(image)}
               alt={image.title || getText(primaryText)}
               className={styles.contentImage}
+              objectFit="cover"
             />
           )}
         </div>
