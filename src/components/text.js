@@ -1,12 +1,9 @@
 import * as React from "react";
 import * as styles from "./text.module.css";
-// import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Section, MarkdownText, Button, Heading } from "gatsby-theme-landing-page";
 
 export default function Text({ heading, secondaryHeading, content }) {
-  const launcherContent = content?.[0];
-//   const image = getImage(launcherContent?.image);
-
   return (
     <Section>
       <div className={styles.root}>
@@ -17,20 +14,28 @@ export default function Text({ heading, secondaryHeading, content }) {
           <Heading as="h1" className={styles.heading}>
             {heading}
           </Heading>
-          <LauncherContent {...launcherContent} />
+          {content.map((item) => (
+            <TextContent key={item.id} {...item} />
+          ))}
         </div>
       </div>
     </Section>
   );
 }
 
-function LauncherContent({ primaryText, secondaryText, links }) {
+function TextContent({ primaryText, image, links }) {
   return (
     <div>
       <MarkdownText {...primaryText} />
-      <MarkdownText {...secondaryText} />
+      {image && (
+        <GatsbyImage
+          image={getImage(image)}
+          alt={image.title || getText(primaryText)}
+          className={styles.contentImage}
+        />
+      )}
       <div className={styles.buttonContainer}>
-        {links.map((link, i) => (
+        {links && links.map((link, i) => (
           <Button
             key={link.id}
             {...link}

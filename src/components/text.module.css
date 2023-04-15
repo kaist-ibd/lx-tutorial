@@ -24,6 +24,10 @@
   gap: var(--space-3);
 }
 
+.contentImage {
+  margin-bottom: var(--space-3);
+}
+
 @media screen and (min-width: 640px) {
   .root {
     align-items: flex-start;

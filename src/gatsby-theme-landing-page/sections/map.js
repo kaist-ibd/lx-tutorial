@@ -108,14 +108,13 @@ export default function Map({ heading, secondaryHeading, content }) {
   );
 }
 
-function Content({ primaryText, secondaryText, links = [] }) {
+function Content({ primaryText, links = [] }) {
   return (
     <div className={styles.content}>
       <div className={styles.buttons}>
         {links && links.map((link) => <Button key={link.id} {...link} />)}
       </div>
       <MarkdownText {...primaryText} />
-      <MarkdownText {...secondaryText} />
     </div>
   );
 }

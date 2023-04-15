@@ -30,11 +30,10 @@ export default function Launcher({ heading, secondaryHeading, content }) {
   );
 }
 
-function LauncherContent({ primaryText, secondaryText, links }) {
+function LauncherContent({ primaryText, links }) {
   return (
     <div>
       <MarkdownText {...primaryText} />
-      <MarkdownText {...secondaryText} />
       <div className={styles.buttonContainer}>
         {links.map((link, i) => (
           <Button
