@@ -10,7 +10,7 @@ export default function Layout(props) {
     <div className={[cssVars.root, styles.root].join(" ")}>
       <Head {...props} />
       <header className={styles.header}>
-        <Link to="/">대전 메타버스 (HEADING)</Link>
+      대전 메타버스
       </header>
       <main className={styles.main}>{props.children}</main>
       <footer className={styles.footer}>
