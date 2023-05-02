@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as styles from "./imageText.module.css";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage, getText } from "gatsby-plugin-image";
 import { Section, MarkdownText, Button, Heading } from "gatsby-theme-landing-page";
 
 export default function ImageText({ heading, secondaryHeading, content }) {
