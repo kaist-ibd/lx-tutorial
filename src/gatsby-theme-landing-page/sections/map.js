@@ -3,7 +3,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import * as styles from "./map.module.css";
 import { MarkdownText, Button, Heading } from "gatsby-theme-landing-page";
 
-export default function Map({ heading, secondaryHeading, content }) {
+export default function Map() {
   const [serverStatus, setServerStatus] = useState('');
   const [online, setOnline] = useState(false);
   const [serverPlayers, setServerPlayers] = useState(0);
@@ -42,7 +42,7 @@ export default function Map({ heading, secondaryHeading, content }) {
 
   return (
     <>
-      <section className={styles.root}>
+      {/* <section className={styles.root}>
         <Heading center>{heading}</Heading>
         <Heading secondary center>
           {secondaryHeading}
@@ -52,7 +52,7 @@ export default function Map({ heading, secondaryHeading, content }) {
             <Content key={c.id} {...c} />
           ))}
         </div>
-      </section>
+      </section> */}
       <section className={styles.root}>
         <Heading center>라이브 서버 상황</Heading>
         {isLoading ? 
@@ -108,13 +108,13 @@ export default function Map({ heading, secondaryHeading, content }) {
   );
 }
 
-function Content({ primaryText, links = [] }) {
-  return (
-    <div className={styles.content}>
-      <div className={styles.buttons}>
-        {links && links.map((link) => <Button key={link.id} {...link} />)}
-      </div>
-      <MarkdownText {...primaryText} />
-    </div>
-  );
-}
+// function Content({ primaryText, links = [] }) {
+//   return (
+//     <div className={styles.content}>
+//       <div className={styles.buttons}>
+//         {links && links.map((link) => <Button key={link.id} {...link} />)}
+//       </div>
+//       <MarkdownText {...primaryText} />
+//     </div>
+//   );
+// }
