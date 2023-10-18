@@ -25,9 +25,9 @@ if (!spaceId || !accessToken) {
 module.exports = {
   siteMetadata: {
     title: "LX Web Demo",
-    description:
-      "LX Web Demo",
+    description: "LX Web Demo",
   },
+  pathPrefix: "/lx-tutorial",
   plugins: [
     {
       resolve: `gatsby-theme-landing-page`,

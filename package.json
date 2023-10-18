@@ -24,13 +24,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kaist-ibd/LX-Demo.git"
+    "url": "git+https://github.com/kaist-ibd/lx-tutorial.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kaist-ibd/LX-Demo/issues"
+    "url": "https://github.com/kaist-ibd/lx-tutorial/issues"
   },
-  "homepage": "https://github.com/kaist-ibd/LX-Demo",
+  "homepage": "https://kaist-ibd.github.io/lx-tutorial/",
   "dependencies": {
     "@fontsource/inter": "^4.5.1",
     "dotenv": "^16.0.3",
@@ -44,6 +44,7 @@
     "gatsby-theme-landing-page": "1.0.2",
     "gatsby-transformer-remark": "^6.7.0",
     "gatsby-transformer-sharp": "^5.7.0",
+    "gh-pages": "^6.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0"
