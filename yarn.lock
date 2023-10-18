@@ -8093,6 +8093,7 @@ lru-queue@^0.1.0:
     gatsby-theme-landing-page "1.0.2"
     gatsby-transformer-remark "^6.7.0"
     gatsby-transformer-sharp "^5.7.0"
+    gh-pages "^6.0.0"
     react "^18.2.0"
     react-dom "^18.2.0"
     react-helmet "^6.1.0"
